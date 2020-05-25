@@ -1,4 +1,4 @@
-package com.nirmal.oauthserver.model;
+package com.enterprise.oauthserver.model;
 
 import org.springframework.security.core.userdetails.User;
 

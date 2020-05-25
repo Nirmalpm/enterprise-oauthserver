@@ -1,6 +1,6 @@
-package com.nirmal.oauthserver.email;
+package com.enterprise.oauthserver.email;
 
-import com.nirmal.oauthserver.model.UserEntity;
+import com.enterprise.oauthserver.model.UserEntity;
 
 public interface EmailService {
 	public void sendMessage(String to, String subject, String text);

@@ -1,4 +1,4 @@
-package com.nirmal.oauthserver.config;
+package com.enterprise.oauthserver.config;
 
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;

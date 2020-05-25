@@ -1,4 +1,4 @@
-package com.nirmal.oauthserver.model;
+package com.enterprise.oauthserver.model;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.nirmal.oauthserver.config;
+package com.enterprise.oauthserver.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -34,6 +34,12 @@ public class AuthServerConfigAdapter extends AuthorizationServerConfigurerAdapte
 	@Value("${config.oauth2.clientSecret}")
 	private String clientSecret;
 	
+	@Value("${config.oauth2.accesstoken_validity}")
+	private int accessTokenValidity;
+	
+	@Value("${config.oauth2.refreshtoken_validity}")
+	private int refreshTokenValidity;
+	
 	@Autowired
 	PasswordEncoder passwordEncoder;
 	
@@ -51,8 +57,8 @@ public class AuthServerConfigAdapter extends AuthorizationServerConfigurerAdapte
 		.withClient(clientId)
 		.secret(passwordEncoder.encode(clientSecret))
 		.scopes("read","write")
-		.accessTokenValiditySeconds(600)
-		.refreshTokenValiditySeconds(604800)
+		.accessTokenValiditySeconds(accessTokenValidity)
+		.refreshTokenValiditySeconds(refreshTokenValidity)
 		.authorizedGrantTypes("password","refresh_token");
 	}
 

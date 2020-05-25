@@ -8,11 +8,11 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.nirmal</groupId>
+	<groupId>com.enterprise</groupId>
 	<artifactId>oauthserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>oauthserver</name>
-	<description>Demo project for Spring Boot oauth server</description>
+	<name>EnterpriseOAuthServer</name>
+	<description>Authorization Server for the Enterprise Application</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -91,6 +91,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<finalName>OAuthServer</finalName>
+				</configuration>				
 			</plugin>
 		</plugins>
 	</build>

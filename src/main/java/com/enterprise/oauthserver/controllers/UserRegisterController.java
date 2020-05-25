@@ -1,4 +1,4 @@
-package com.nirmal.oauthserver.controllers;
+package com.enterprise.oauthserver.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,11 +21,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.enterprise.oauthserver.dao.OAuthDAOService;
+import com.enterprise.oauthserver.email.EmailService;
+import com.enterprise.oauthserver.model.UserEntity;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.nirmal.oauthserver.dao.OAuthDAOService;
-import com.nirmal.oauthserver.email.EmailService;
-import com.nirmal.oauthserver.model.UserEntity;
 
 @RestController
 @RequestMapping("/register")

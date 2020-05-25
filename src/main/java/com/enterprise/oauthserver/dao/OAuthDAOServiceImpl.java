@@ -1,4 +1,4 @@
-package com.nirmal.oauthserver.dao;
+package com.enterprise.oauthserver.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -21,7 +21,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.nirmal.oauthserver.model.UserEntity;
+import com.enterprise.oauthserver.model.UserEntity;
 
 @Repository
 public class OAuthDAOServiceImpl implements OAuthDAOService {

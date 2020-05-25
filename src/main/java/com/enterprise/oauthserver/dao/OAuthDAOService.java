@@ -1,6 +1,6 @@
-package com.nirmal.oauthserver.dao;
+package com.enterprise.oauthserver.dao;
 
-import com.nirmal.oauthserver.model.UserEntity;
+import com.enterprise.oauthserver.model.UserEntity;
 
 public interface OAuthDAOService {
 	UserEntity getUserDetails(String emailId);

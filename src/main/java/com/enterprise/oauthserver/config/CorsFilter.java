@@ -1,4 +1,4 @@
-package com.nirmal.oauthserver.config;
+package com.enterprise.oauthserver.config;
 
 import java.io.IOException;
 
